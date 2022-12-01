@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validatePass(){
+            var str1=document.getElementsById("password1");
+            var str2=document.getElementsById("password2");
+            if(str1==str2){
+                alert("passwords are Matched");      
+            }
+            else
+            alert("Password are not matched");
+            if(str1==null)
+            {
+                alert("Enter value");
+            }
+        }
+        
+    </script>
+</head>
+<body>
+
+    <form>  
+        <h1 style="color:green">Validation form</h1>  
+        <h3> Confirm password Validation Example </h3>  
+        <!-- Enter Password -->  
+        <td> Enter Password </td>  
+        <input type = "password" name = "password1"> <br><br>  
+          
+        <!-- Enter Confirm password -->  
+        <td> Confirm Password </td>  
+        <input type = "password" name = "password2"> <br><br>  
+          
+        
+        <button type = "submit" onclick="validatePass()">Submit</button>  
+          
+        <!-- Click to reset fields -->  
+        <button type = "reset" value = "Reset" >Reset</button>  
+        </form>  
+        
+</form>
+</body>
+</html>

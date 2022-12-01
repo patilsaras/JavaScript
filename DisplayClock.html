@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+setInterval(timeDisplay,1000);
+function timeDisplay(){
+var time=new Date();
+var hr=time.getHours();
+var min=time.getMinutes();
+var sec=time.getSeconds();
+var am_pm='AM';
+if(hr>12)
+am_pm='PM';
+else
+am_pm='AM';
+
+document.getElementById("clock").innerHTML=hr +":"+min+":"+sec+" "+am_pm;
+
+}
+timeDisplay();
+
+</script>
+</head>
+<body>
+<div id="clock">12:12:12</div>
+</body>
+</html>

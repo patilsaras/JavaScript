@@ -1,0 +1,73 @@
+<html>   
+   <head>
+      <script type = "text/javascript">
+  
+      function validate() {
+      
+         if( document.myForm.fname.value == "" ) {
+            alert( "Please provide your FirstName" );
+            document.myForm.fname.focus() ;
+            return false;
+         }
+if( document.myForm.lname.value == "" ) {
+            alert( "Please provide your LastName" );
+            document.myForm.lname.focus() ;
+            return false;
+         }
+
+ if( document.myForm.address.value == "" ) {
+            alert( "Please provide your Address" );
+            document.myForm.address.focus() ;
+            return false;
+         }
+if( document.myForm.mobile.value == "" ) {
+            alert( "Please provide your Mobile Number" );
+            document.myForm.mobile.focus() ;
+            return false;
+         }
+         return( true );
+      }
+
+</script>    
+   </head>
+   <h2 align="center">Personal Information</h2>
+<hr>
+   <body>
+    <center>
+      <form name = "myForm" onsubmit = "return(validate());">
+
+   <label>First name:</label>
+  <input type="text" id="fname" name="fname"><br>
+  <br>
+  <label>Last name:</label>
+  <input type="text" id="lname" name="lname">
+  <br><br>
+   <label>Address:</label>
+  <input type="text" id="address" name="address">
+  <br><br>
+   <label>Mobile Number:</label>
+  <input type="text" id="mobile" name="mobile">
+  <br>
+   <label>Gender :</label>
+  <input type="radio" id="male" name="gen" value="Male">
+  <label>MALE</label>
+  <input type="radio" id="female" name="gen" value="FEMALE">
+  <label>FEMALE</label><br>
+  
+  <label>Your Interests:</label>
+  <input type="checkbox" id="Computer" name="Computer" value="Computer">
+  <label>Computer</label>
+  <input type="checkbox" id="Sports" name="Sports" value="Sports">
+  <label>Sports</label>
+  <input type="checkbox" id="Music" name="Music" value="Music">
+  <label>Music</label><br>
+  <br>
+ <input type="submit" value="Submit"> 
+  <input type="reset"  value="Reset">
+
+      </form>     
+    </center>
+<hr> 
+   </body>
+
+</html>
